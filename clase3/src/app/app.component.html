@@ -1,0 +1,26 @@
+<form *ngIf="mostrarFormulario" action="">
+  <mat-card class="cedinsiLogin">
+    <mat-form-field>
+      <input matInput [placeholder]="placeholderUsuario" type="text" [(ngModel)]="variableInput" name="Usuario">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Contraseña" type="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (mouseleave)="clickPrueba()" type="button">Primary</button>
+    <img [src]="imagen" alt="jupiter" width="200">
+  </mat-card>
+
+  <div>Cantidad de intentos {{ cantidadIntentos  }}</div>
+  <div>Usuario digitado {{ variableInput  }}</div>
+</form>
+
+
+
+<button type="button" mat-raised-button (click)="ocultarMostrarFormulario()" >Ocultar/Mostrar Formulario</button>
+
+
+<div *ngFor="let i of opciones
+">Opción {{i | lowercase }}</div>
+
+
+<router-outlet></router-outlet>
