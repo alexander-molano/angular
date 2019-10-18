@@ -1,0 +1,21 @@
+<div [ngSwitch]="opcion">
+  <div *ngSwitchCase="'Titulo A'">Estoy en el titulo A</div>
+  <div *ngSwitchCase="'Titulo B'">Estoy en el titulo B</div>
+  <div *ngSwitchCase="'Titulo C'">Estoy en el titulo C</div>
+  <div *ngSwitchCase="'Titulo D'">Estoy en el titulo D</div>
+</div>
+
+<button [ngStyle]="{background: 'yellow', padding: '20px'}">Click</button>
+<button [ngClass]="'green'">Otro boton</button>
+<button [class.green]="activarClase">Otro boton</button>
+
+<div appCedisiDireciva>Hola Mundo</div>
+
+{{ title | uppercase }}
+
+<app-cedinsi-ejercicio-pipe></app-cedinsi-ejercicio-pipe>
+
+<router-outlet></router-outlet>
+
+
+<!-- angular.io/API -->
