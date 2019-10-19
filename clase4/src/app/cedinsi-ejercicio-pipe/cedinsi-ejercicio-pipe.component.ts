@@ -11,6 +11,8 @@ export class CedinsiEjercicioPipeComponent implements OnInit {
 
   fecha: number = Date.now();
 
+  pipe = 'ejercicioPipe'
+
   constructor() { }
 
   ngOnInit() {
