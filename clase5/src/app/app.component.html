@@ -1,0 +1,13 @@
+
+<!-- 
+<app-video-cedinsi></app-video-cedinsi> -->
+
+
+{{ iframeVideo | json }}
+
+<div *ngFor="let i of iframeVideo">
+    <app-video-cedinsi [iframeVideo] = "i"></app-video-cedinsi>
+</div>
+
+
+<router-outlet></router-outlet> 
