@@ -1,0 +1,11 @@
+<!-- <ng-content></ng-content>  no carga el DOM-->
+
+
+<mat-list>
+    <div *ngFor="let item of items | async">
+        <mat-list-item>{{item.llave}}:{{item.valor}}</mat-list-item>
+
+        {{ item | json }}
+        <mat-divider></mat-divider>
+    </div>
+</mat-list>
